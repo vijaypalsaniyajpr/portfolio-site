@@ -1,0 +1,87 @@
+/* Home Page Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 120px; /* To avoid header overlap */
+  background: linear-gradient(145deg, #0d1117, #161b22);
+  color: #c9d1d9;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.home-content:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.intro h1 {
+  font-size: 2.5em;
+  color: #58a6ff;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2em;
+  color: #c9d1d9;
+  margin-bottom: 30px;
+}
+
+.intro button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #58a6ff;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  margin-right: 10px;
+}
+
+.intro button:hover {
+  background-color: #1f6feb;
+  transform: translateY(-3px);
+}
+
+.intro button:active {
+  transform: translateY(1px);
+}
+
+.intro .download-resume {
+  background-color: #34d399;
+  color: #fff;
+}
+
+.intro .download-resume:hover {
+  background-color: #059669;
+}

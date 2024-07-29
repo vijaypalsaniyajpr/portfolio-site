@@ -1,0 +1,98 @@
+/* My Work Page Styles */
+.my-work-container {
+    padding: 2rem;
+    background-color: var(--main-bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .my-work-content {
+    max-width: 900px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .my-work-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    color: var(--secondary-color);
+  }
+  
+  .my-work-content .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+  
+  .my-work-content .project {
+    background-color: var(--secondary-bg-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: calc(50% - 1rem);
+    cursor: pointer;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  .my-work-content .project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .my-work-content .project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+  }
+  
+  .back-button {
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 2rem auto;
+    transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
+    display: block;
+  }
+  
+  .back-button:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+  }
+  
+  .back-button:active {
+    transform: translateY(2px);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
